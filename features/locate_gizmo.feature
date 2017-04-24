@@ -3,6 +3,6 @@ Feature: Locate gizmo every five minutes up to 100 times
 
   Scenario: Locate gizmo every five minutes upto 100 times
     Given I have successfully pair the gizmo
-    Then I should be able to locate the gizmo every five minutes upto 100 times
-    Then The test should end
+    Then I should be able to locate the gizmo every five minutes upto one hundred times
+
 

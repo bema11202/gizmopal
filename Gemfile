@@ -10,6 +10,12 @@ gem "rdoc"
 gem "rspec-expectations"
 gem "rest-client"
 gem "calabash-cucumber"
+gem "rubygems-bundler"
+gem "rubygems-update"
+gem "pry"
+
+
+
 
 
 
