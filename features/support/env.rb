@@ -169,8 +169,6 @@ end
 
     end
 
-
-
   def wait
     Selenium::WebDriver::Wait.new :timeout => 60
   end
