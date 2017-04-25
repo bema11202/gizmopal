@@ -1,21 +1,16 @@
-require "rubygems"
-require "selenium-webdriver"
-require "appium_lib"
-require "rspec"
-require "rspec/expectations"
-require "cucumber"
-require "rdoc"
+require 'selenium-webdriver'
+require 'appium_lib'
+require 'cucumber'
+require 'rspec'
+require 'rdoc'
 include RSpec::Matchers
 include RSpec::Expectations
-
-
-
+include Selenium::WebDriver::Support
 
 
 Given(/^I have successfully paired the gizmo$/) do
   pair_gizmo
 end
-
 
 Then(/^I should not be able to add a caregiver without a name or phone number$/) do
   settings = wait.until{@driver.find_element(:xpath => '/android.widget.TextView[3]')}

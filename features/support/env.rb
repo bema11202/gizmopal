@@ -23,6 +23,7 @@ Before do
         'platformVersion': '6.0',
         'newCommandTimeout': '5000',
         'deviceName': 'Nexus J3',
+        '--no-reset': 'False',
         'app': '/Users/B.Masoko/Desktop/GIZMOPAL/apks/Vzw_GizmoPal_2_3_42_Test_debug.apk',
     }
   end
@@ -44,8 +45,10 @@ end
 
                                    desired_capabilities: capabilities,
                                    url: "http://127.0.0.1:4723/wd/hub"
-  def pair_gizmo
 
+end
+
+  def pair_gizmo
 
       @get_started = wait.until{(@driver.find_element(:id, 'com.vzw.gizmopal:id/introNextButton'))}
       @get_started.click
@@ -54,14 +57,12 @@ end
       continue_button = wait.until{@driver.find_element(:xpath, '//android.widget.Button[2]')}
       continue_button.click
 
-      # I should see the permission popup buttons
-      #3.times do
-      #  permission_popup = wait.until{(@driver.find_element(:xpath, '//android.widget.Button[2]'))}
-      #  permission_popup.click
-      #end
 
+      # I should see the permission popup buttons
       permission_popup = wait.until{(@driver.find_element(:xpath, '//android.widget.Button[2]'))}
-      permission_popup.click if permission_popup.displayed?.to be_truthy
+      3.times do
+        permission_popup.click
+      end
 
 
       # I should see the Next button on Prepare your Gizmo page
@@ -82,24 +83,10 @@ end
       #@gizmo_test_numbers = [6464543333, 2128893345, 9084565555, 7184449000, 9084445555].sample
       @gizmo_test_numbers = 9082395581
       gizmo_number.send_keys(@gizmo_test_numbers)
-
       click_next_button
 
-      #check if there is a phone number
-
-      phone_number =  wait.until{(@driver.find_element(:id => 'com.vzw.gizmopal:id/setupCaretakerMdn').clear)}
-      sleep 3
-      phone_number.send_keys(6462002347)
-
-
-      #End phone number check
-
-      # I should be redirected to personalize your gizmo page
-      wait.until{(@driver.find_element(:id, 'com.vzw.gizmopal:id/setupRelationsText'))}
-      wait.until{(@driver.find_element(:id, 'com.vzw.gizmopal:id/setupRelationsText').click)}
-      wait.until{(@driver.find_element(:id, 'android:id/text1').click)}
-
-      click_next_button
+      # Check if the phone number exist
+      validate_phone_number
 
       # I enter child’s name and select what the child calls you from the dropdown menu and press the NEXT button
 
@@ -132,42 +119,33 @@ end
 
       # I should see text containing Linking To Your Gizmo header
       wait = Selenium::WebDriver::Wait.new :timeout => 240
-      expect(wait.until{(@driver.find_element(:id => 'com.vzw.gizmopal:id/registeringHeader').text.eql? 'Linking to Your Gizmo')})
+      expect(wait.until{(@driver.find_element(:id => 'com.vzw.gizmopal:id/registeringHeader'))})
 
+      #'Linking to Your Gizmo'
+      linking_confirmation = @driver.find_element(:id => 'com.vzw.gizmopal:id/registeringHeader')
       # I should see allow contacts popup
-
-
+      if
       allow_contact = wait.until{(@driver.find_element(:id => 'com.android.packageinstaller:id/permission_allow_button'))}
-      allow_contact.click
+        allow_contact.click
 
-      #Contact exists
-
-
-      @contact_exists = wait.until{(@driver.find_element(:id => 'android:id/button1'))}
-
-      if @contact_exists
-        @contact_exists.click
-      else
+      elsif linking_confirmation.text.eq('Unable to Linking to Your Gizmo')
+        @driver.quit
 
       end
 
-      2.times do
-        click_next_button
-      end
+      contact_exists = wait.until{(@driver.find_element(:id => 'android:id/button1'))}
 
-=begin
-  # I may see the app upgrade if there is a new version
-  #wait.until{(@driver.find_element(:id => 'com.android.packageinstaller:id/permission_allow_button').click)}
+      contact_exists.click
 
-  # I should be on the dashboard -check for the call image
-  expect(wait.until{(@driver.find_element(:id => 'com.vzw.gizmopal:id/toolbar_call_imageview'))})
+      done = wait.until{(@driver.find_element(:id, 'com.vzw.gizmopal:id/bottomRightButton'))}
 
-    puts "The gizmo was successfully paired to your devices".upcase
-=end
+      2.times {done.click}
+
+      puts 'Gizmo has been successfully paired'.upcase
 
       expect(wait.until{(@driver.find_element(:id => 'com.vzw.gizmopal:id/gizmopal_locate').click)})
 
-    end
+  end
 
   def wait
     Selenium::WebDriver::Wait.new :timeout => 60
@@ -227,7 +205,7 @@ end
       click_next_button
     end
   end
-end
+
 
 
 

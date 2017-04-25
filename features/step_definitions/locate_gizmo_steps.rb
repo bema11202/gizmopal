@@ -98,14 +98,15 @@ Given(/^I have successfully pair the gizmo$/) do
 
   contact_exists.click if contact_exists
 
-  2.times do
-    click_next_button
-    puts 'Gizmo has been successfully paired'.upcase
-  end
+  2.times {click_next_button}
+
+  puts 'Gizmo has been successfully paired'.upcase
 
   expect(wait.until{(@driver.find_element(:id => 'com.vzw.gizmopal:id/gizmopal_locate').click)})
 
 end
+
+
 
 
 Then(/^I should be able to locate the gizmo every five minutes upto one hundred times$/) do |counter = 0|
