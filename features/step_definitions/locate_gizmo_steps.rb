@@ -3,6 +3,7 @@ require 'appium_lib'
 require 'cucumber'
 require 'rspec'
 require 'rdoc'
+require 'watir'
 include RSpec::Matchers
 include RSpec::Expectations
 include Selenium::WebDriver::Support

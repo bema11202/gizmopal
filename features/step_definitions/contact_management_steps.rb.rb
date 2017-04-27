@@ -19,6 +19,7 @@ Then(/^I should not be able to add a caregiver without a name or phone number$/)
   contacts = wait.until{@driver.find_element(:id => 'com.vzw.gizmopal:id/settingsContactsLayout')}
   contacts.click
 
+
   add_contact_button = wait.until{@driver.find_element(:id => 'com.vzw.gizmopal:id/contacts_add')}
   if add_contact_button.displayed?.to be_truthy
   then add_contact_button.click
@@ -48,30 +49,82 @@ Then(/^I should not be able to add a caregiver without a name or phone number$/)
 end
 
 Then(/^I should be able to add a caregiver$/) do
+  wait.until{@driver.find_element(:id => 'settins').click}
+  wait.until{@driver.find_element(:id => 'contact').click}
+  wait.until{@driver.find_element(:id => 'addcontact_button').click}
+  caregiver_info = wait.until{@driver.find_element(:id => 'name')}
+  caregiver_info.send_keys 'caregivername'
+  caregiver_phone = @driver.find_element(:id => 'caregiverphone')
+  caregiver_phone.send_keys 'phone'
+  @driver.find_element(:id => 'relationship').click
+  wait.until{@driver.find_element(:id => 'relationship_selection').click}
 
+  consent_dropdown =   wait.until{@driver.find_element(:id => 'consent')}
+  if consent_dropdown.selected?
+    save_button = wait.until{@driver.find_element(:id => 'save')}
+    save_button.click
+  else
+    consent_dropdown.select.action_perform
+    save_button.click
+  end
+  expect(wait.until{@driver.find_element(:id => 'contact_name').text.to include('john')})
+  puts 'Contact added successfully'.upcase
 end
+
 
 Then(/^I should be able to edit caregiver information$/) do
-  pending
-end
+  wait.until{@driver.find_element(:id => 'settins').click}
+  wait.until{@driver.find_element(:id => 'contact').click}
+  contact_name = wait.until{@driver.find_element(:id => 'contact_name')}
+  contact_name.clear
+  contact_name.send_keys 'Andrew'
+  save_button = wait.until{@driver.find_element(:id => 'save')}
+  save_button.click
+
+  expect(wait.until{@driver.find_element(:id => 'contact_name').text.to include('Andrew')})
+  puts 'Contact edited successfully'.upcase
+  end
+
 
 Then(/^I should be able to convert a caregiver into a contact$/) do
-  pending
+  wait.until{@driver.find_element(:id => 'settins').click}
+  wait.until{@driver.find_element(:id => 'contact').click}
+  consent_dropdown =   wait.until{@driver.find_element(:id => 'consent')}
+  consent_dropdown.click if consent_dropdown.selected?.be_falsey
+  save_button = wait.until{@driver.find_element(:id => 'save')}
+  save_button.click
+  sleep 5
 end
+
+
+  Then(/^I should be able to convert a caregiver into a contact back to a caregiver$/) do
+
+    wait.until{@driver.find_element(:id => 'settins').click}
+    wait.until{@driver.find_element(:id => 'contact').click}
+    consent_dropdown =   wait.until{@driver.find_element(:id => 'consent')}
+    consent_dropdown.click if consent_dropdown.selected?.be_truthy
+    save_button = wait.until{@driver.find_element(:id => 'save')}
+    save_button.click
+    sleep 5
+  end
 
 Then(/^I should be able to delete a caregiver$/) do
-  pending
-end
-
-Then(/^I should not be able to add a contact without a name or phone number$/) do
-  pending
+  wait.until{@driver.find_element(:id => 'settins').click}
+  wait.until{@driver.find_element(:id => 'contact').click}
+  contact_name = wait.until{@driver.find_element(:id => 'contact_name')}
+  contact_name.longpress
+  wait.until{@driver.find_element(:id => 'popuponfirm').click}
 end
 
 Then(/^I should be able to add a contact$/) do
-  pending
+
 end
 
 Then(/^I should be able to delete a contact$/) do
-  pending
-end
+  wait.until{@driver.find_element(:id => 'settins').click}
+  wait.until{@driver.find_element(:id => 'contact').click}
+  contact_name = wait.until{@driver.find_element(:id => 'contact_name')}
+  contact_name.longpress
+  wait.until{@driver.find_element(:id => 'popuponfirm').click}
 
+end

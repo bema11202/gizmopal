@@ -10,7 +10,7 @@ Feature: Contact management
       Then I should be able to add a caregiver
       Then I should be able to edit caregiver information
       Then I should be able to convert a caregiver into a contact
+      Then I should be able to convert a caregiver into a contact back to a caregiver
       Then I should be able to delete a caregiver
-      Then I should not be able to add a contact without a name or phone number
       Then I should be able to add a contact
       Then I should be able to delete a contact

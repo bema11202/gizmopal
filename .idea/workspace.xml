@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="631e10c9-4d67-4763-aedc-49964c732b1f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/contact_management_steps_rb.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/240" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/60" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Locate_gizmo.iml" afterPath="$PROJECT_DIR$/.idea/Locate_gizmo.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/contact_management.feature" afterPath="$PROJECT_DIR$/features/contact_management.feature" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/step_definitions/contact_management_steps.rb.rb" afterPath="$PROJECT_DIR$/features/step_definitions/contact_management_steps.rb.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/step_definitions/locate_gizmo_steps.rb" afterPath="$PROJECT_DIR$/features/step_definitions/locate_gizmo_steps.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/support/env.rb" afterPath="$PROJECT_DIR$/features/support/env.rb" />
@@ -16,7 +21,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Locate_gizmo@locate_gizmo_feature.coverage" NAME="locate_gizmo.feature Coverage Results" MODIFIED="1493066906498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Locate_gizmo" />
+    <SUITE FILE_PATH="coverage/Locate_gizmo@locate_gizmo_feature.coverage" NAME="locate_gizmo.feature Coverage Results" MODIFIED="1493306281946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Locate_gizmo" />
     <SUITE FILE_PATH="coverage/Locate_gizmo@contact_management_feature.coverage" NAME="contact_management.feature Coverage Results" MODIFIED="1493131864502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Locate_gizmo" />
     <SUITE FILE_PATH="coverage/Locate_gizmo@contact_management_steps_rb.coverage" NAME="contact_management_steps.rb Coverage Results" MODIFIED="1493055390114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/features/step_definitions" MODULE_NAME="Locate_gizmo" />
   </component>
@@ -27,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -46,18 +51,18 @@
       <file leaf-file-name="contact_management.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/contact_management.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="304">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact_management_steps.rb.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="contact_management_steps.rb.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/step_definitions/contact_management_steps.rb.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="133">
+              <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -66,27 +71,21 @@
       <file leaf-file-name="locate_gizmo_steps.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/step_definitions/locate_gizmo_steps.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2185">
-              <caret line="115" column="21" lean-forward="false" selection-start-line="115" selection-start-column="21" selection-end-line="115" selection-end-column="21" />
+            <state relative-caret-position="171">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="env.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="env.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/features/support/env.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2565">
-              <caret line="137" column="26" lean-forward="false" selection-start-line="137" selection-start-column="26" selection-end-line="137" selection-end-column="26" />
+            <state relative-caret-position="265">
+              <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
               <folding>
-                <element signature="e#599#654#0" expanded="false" />
-                <element signature="e#4536#4599#0" expanded="false" />
-                <element signature="e#4603#4653#0" expanded="false" />
-                <element signature="e#4779#4949#0" expanded="false" />
-                <element signature="e#4953#5066#0" expanded="false" />
-                <element signature="e#5070#5169#0" expanded="false" />
-                <element signature="e#5173#5274#0" expanded="false" />
-                <element signature="e#5278#6350#0" expanded="false" />
+                <element signature="e#616#671#0" expanded="true" />
+                <element signature="e#6357#6379#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -103,9 +102,9 @@
         <option value="$PROJECT_DIR$/features/locate_gizmo.feature" />
         <option value="$PROJECT_DIR$/features/contact_management.feature" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/features/step_definitions/locate_gizmo_steps.rb" />
         <option value="$PROJECT_DIR$/features/step_definitions/contact_management_steps.rb.rb" />
         <option value="$PROJECT_DIR$/features/support/env.rb" />
-        <option value="$PROJECT_DIR$/features/step_definitions/locate_gizmo_steps.rb" />
       </list>
     </option>
   </component>
@@ -116,10 +115,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="8" />
     <option name="y" value="23" />
-    <option name="width" value="1458" />
-    <option name="height" value="1093" />
+    <option name="width" value="1440" />
+    <option name="height" value="991" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -156,6 +154,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -202,12 +201,11 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Other File Types" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RunDashboard">
@@ -222,7 +220,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber.contact_management.feature">
+  <component name="RunManager" selected="Cucumber.locate_gizmo.feature">
     <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="" />
@@ -400,7 +398,11 @@
       <workItem from="1492639333701" duration="16963000" />
       <workItem from="1493053133860" duration="2070000" />
       <workItem from="1493055232402" duration="7883000" />
-      <workItem from="1493133791259" duration="112000" />
+      <workItem from="1493133791259" duration="2852000" />
+      <workItem from="1493216162302" duration="126000" />
+      <workItem from="1493221607586" duration="9778000" />
+      <workItem from="1493305082762" duration="398000" />
+      <workItem from="1493305515899" duration="872000" />
     </task>
     <task id="LOCAL-00001" summary="First commit of 5 x 100">
       <created>1491591655283</created>
@@ -427,39 +429,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="contact_management_feature - 2017.04.24 at 16h 55m 14s.xml">
-      <configuration name="contact_management.feature" configurationId="CucumberRunConfigurationType" />
-    </history-entry>
-    <history-entry file="contact_management_feature - 2017.04.25 at 10h 49m 20s.xml">
-      <configuration name="contact_management.feature" configurationId="CucumberRunConfigurationType" />
-    </history-entry>
-    <history-entry file="contact_management_feature - 2017.04.25 at 10h 50m 04s.xml">
-      <configuration name="contact_management.feature" configurationId="CucumberRunConfigurationType" />
-    </history-entry>
-    <history-entry file="contact_management_feature - 2017.04.25 at 10h 54m 02s.xml">
-      <configuration name="contact_management.feature" configurationId="CucumberRunConfigurationType" />
-    </history-entry>
-    <history-entry file="locate_gizmo_feature - 2017.04.24 at 16h 07m 33s.xml">
+    <history-entry file="locate_gizmo_feature - 2017.04.27 at 10h 52m 59s.xml">
       <configuration name="locate_gizmo.feature" configurationId="CucumberRunConfigurationType" />
     </history-entry>
-    <history-entry file="locate_gizmo_feature - 2017.04.24 at 16h 14m 26s.xml">
+    <history-entry file="locate_gizmo_feature - 2017.04.27 at 10h 53m 48s.xml">
       <configuration name="locate_gizmo.feature" configurationId="CucumberRunConfigurationType" />
     </history-entry>
-    <history-entry file="locate_gizmo_feature - 2017.04.24 at 16h 32m 50s.xml">
+    <history-entry file="locate_gizmo_feature - 2017.04.27 at 10h 56m 46s.xml">
       <configuration name="locate_gizmo.feature" configurationId="CucumberRunConfigurationType" />
     </history-entry>
-    <history-entry file="locate_gizmo_feature - 2017.04.24 at 16h 42m 06s.xml">
+    <history-entry file="locate_gizmo_feature - 2017.04.27 at 10h 59m 19s.xml">
       <configuration name="locate_gizmo.feature" configurationId="CucumberRunConfigurationType" />
     </history-entry>
-    <history-entry file="locate_gizmo_feature - 2017.04.24 at 16h 47m 17s.xml">
+    <history-entry file="locate_gizmo_feature - 2017.04.27 at 10h 59m 51s.xml">
       <configuration name="locate_gizmo.feature" configurationId="CucumberRunConfigurationType" />
     </history-entry>
-    <history-entry file="locate_gizmo_feature - 2017.04.24 at 16h 50m 58s.xml">
+    <history-entry file="locate_gizmo_feature - 2017.04.27 at 11h 05m 36s.xml">
+      <configuration name="locate_gizmo.feature" configurationId="CucumberRunConfigurationType" />
+    </history-entry>
+    <history-entry file="locate_gizmo_feature - 2017.04.27 at 11h 07m 56s.xml">
+      <configuration name="locate_gizmo.feature" configurationId="CucumberRunConfigurationType" />
+    </history-entry>
+    <history-entry file="locate_gizmo_feature - 2017.04.27 at 11h 11m 08s.xml">
+      <configuration name="locate_gizmo.feature" configurationId="CucumberRunConfigurationType" />
+    </history-entry>
+    <history-entry file="locate_gizmo_feature - 2017.04.27 at 11h 15m 15s.xml">
+      <configuration name="locate_gizmo.feature" configurationId="CucumberRunConfigurationType" />
+    </history-entry>
+    <history-entry file="locate_gizmo_feature - 2017.04.27 at 11h 18m 03s.xml">
       <configuration name="locate_gizmo.feature" configurationId="CucumberRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95426000" />
+    <option name="totallyTimeSpent" value="109340000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -471,18 +473,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="8" y="23" width="1458" height="1093" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="991" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13629943" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32865733" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32865733" sideWeight="0.50282484" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14377682" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32746956" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27469555" sideWeight="0.50429183" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2755511" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32865733" sideWeight="0.49717513" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27455357" sideWeight="0.49570817" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4451962" sideWeight="0.49717513" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32865733" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42857143" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -490,6 +490,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -506,33 +507,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/features/support/env.rb</url>
-          <line>18</line>
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/features/contact_management.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/step_definitions/contact_management_steps.rb.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1045">
-          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/features/step_definitions/locate_gizmo_steps.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -546,14 +525,8 @@
         <state relative-caret-position="893">
           <caret line="187" column="5" lean-forward="false" selection-start-line="187" selection-start-column="5" selection-end-line="187" selection-end-column="5" />
           <folding>
-            <element signature="e#599#654#0" expanded="false" />
-            <element signature="e#4536#4599#0" expanded="false" />
-            <element signature="e#4603#4653#0" expanded="false" />
-            <element signature="e#4779#4949#0" expanded="false" />
-            <element signature="e#4953#5066#0" expanded="false" />
-            <element signature="e#5070#5169#0" expanded="false" />
-            <element signature="e#5173#5274#0" expanded="false" />
-            <element signature="e#5278#6350#0" expanded="false" />
+            <element signature="e#616#671#0" expanded="true" />
+            <element signature="e#6357#6379#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -603,14 +576,8 @@
         <state relative-caret-position="893">
           <caret line="187" column="5" lean-forward="false" selection-start-line="187" selection-start-column="5" selection-end-line="187" selection-end-column="5" />
           <folding>
-            <element signature="e#599#654#0" expanded="false" />
-            <element signature="e#4536#4599#0" expanded="false" />
-            <element signature="e#4603#4653#0" expanded="false" />
-            <element signature="e#4779#4949#0" expanded="false" />
-            <element signature="e#4953#5066#0" expanded="false" />
-            <element signature="e#5070#5169#0" expanded="false" />
-            <element signature="e#5173#5274#0" expanded="false" />
-            <element signature="e#5278#6350#0" expanded="false" />
+            <element signature="e#616#671#0" expanded="true" />
+            <element signature="e#6357#6379#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -652,14 +619,8 @@
         <state relative-caret-position="893">
           <caret line="187" column="5" lean-forward="true" selection-start-line="187" selection-start-column="5" selection-end-line="187" selection-end-column="5" />
           <folding>
-            <element signature="e#599#654#0" expanded="false" />
-            <element signature="e#4536#4599#0" expanded="false" />
-            <element signature="e#4603#4653#0" expanded="false" />
-            <element signature="e#4779#4949#0" expanded="false" />
-            <element signature="e#4953#5066#0" expanded="false" />
-            <element signature="e#5070#5169#0" expanded="false" />
-            <element signature="e#5173#5274#0" expanded="false" />
-            <element signature="e#5278#6350#0" expanded="false" />
+            <element signature="e#616#671#0" expanded="true" />
+            <element signature="e#6357#6379#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -709,14 +670,8 @@
         <state relative-caret-position="893">
           <caret line="187" column="5" lean-forward="true" selection-start-line="187" selection-start-column="5" selection-end-line="187" selection-end-column="5" />
           <folding>
-            <element signature="e#599#654#0" expanded="false" />
-            <element signature="e#4536#4599#0" expanded="false" />
-            <element signature="e#4603#4653#0" expanded="false" />
-            <element signature="e#4779#4949#0" expanded="false" />
-            <element signature="e#4953#5066#0" expanded="false" />
-            <element signature="e#5070#5169#0" expanded="false" />
-            <element signature="e#5173#5274#0" expanded="false" />
-            <element signature="e#5278#6350#0" expanded="false" />
+            <element signature="e#616#671#0" expanded="true" />
+            <element signature="e#6357#6379#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -766,14 +721,8 @@
         <state relative-caret-position="171">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="e#599#654#0" expanded="false" />
-            <element signature="e#4536#4599#0" expanded="false" />
-            <element signature="e#4603#4653#0" expanded="false" />
-            <element signature="e#4779#4949#0" expanded="false" />
-            <element signature="e#4953#5066#0" expanded="false" />
-            <element signature="e#5070#5169#0" expanded="false" />
-            <element signature="e#5173#5274#0" expanded="false" />
-            <element signature="e#5278#6350#0" expanded="false" />
+            <element signature="e#616#671#0" expanded="true" />
+            <element signature="e#6357#6379#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -823,14 +772,8 @@
         <state relative-caret-position="171">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="e#599#654#0" expanded="false" />
-            <element signature="e#4536#4599#0" expanded="false" />
-            <element signature="e#4603#4653#0" expanded="false" />
-            <element signature="e#4779#4949#0" expanded="false" />
-            <element signature="e#4953#5066#0" expanded="false" />
-            <element signature="e#5070#5169#0" expanded="false" />
-            <element signature="e#5173#5274#0" expanded="false" />
-            <element signature="e#5278#6350#0" expanded="false" />
+            <element signature="e#616#671#0" expanded="true" />
+            <element signature="e#6357#6379#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -888,14 +831,8 @@
         <state relative-caret-position="665">
           <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding>
-            <element signature="e#599#654#0" expanded="false" />
-            <element signature="e#4536#4599#0" expanded="false" />
-            <element signature="e#4603#4653#0" expanded="false" />
-            <element signature="e#4779#4949#0" expanded="false" />
-            <element signature="e#4953#5066#0" expanded="false" />
-            <element signature="e#5070#5169#0" expanded="false" />
-            <element signature="e#5173#5274#0" expanded="false" />
-            <element signature="e#5278#6350#0" expanded="false" />
+            <element signature="e#616#671#0" expanded="true" />
+            <element signature="e#6357#6379#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -929,14 +866,8 @@
         <state relative-caret-position="228">
           <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
           <folding>
-            <element signature="e#599#654#0" expanded="false" />
-            <element signature="e#4536#4599#0" expanded="false" />
-            <element signature="e#4603#4653#0" expanded="false" />
-            <element signature="e#4779#4949#0" expanded="false" />
-            <element signature="e#4953#5066#0" expanded="false" />
-            <element signature="e#5070#5169#0" expanded="false" />
-            <element signature="e#5173#5274#0" expanded="false" />
-            <element signature="e#5278#6350#0" expanded="false" />
+            <element signature="e#616#671#0" expanded="true" />
+            <element signature="e#6357#6379#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -949,14 +880,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/60" />
+    <entry file="file://$PROJECT_DIR$/240" />
     <entry file="file://$PROJECT_DIR$/features/locate_gizmo.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -967,42 +892,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/features/contact_management.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="304">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/contact_management_steps.rb.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/features/step_definitions/locate_gizmo_steps.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2185">
-          <caret line="115" column="21" lean-forward="false" selection-start-line="115" selection-start-column="21" selection-end-line="115" selection-end-column="21" />
+        <state relative-caret-position="171">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/features/support/env.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2565">
-          <caret line="137" column="26" lean-forward="false" selection-start-line="137" selection-start-column="26" selection-end-line="137" selection-end-column="26" />
+        <state relative-caret-position="265">
+          <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
           <folding>
-            <element signature="e#599#654#0" expanded="false" />
-            <element signature="e#4536#4599#0" expanded="false" />
-            <element signature="e#4603#4653#0" expanded="false" />
-            <element signature="e#4779#4949#0" expanded="false" />
-            <element signature="e#4953#5066#0" expanded="false" />
-            <element signature="e#5070#5169#0" expanded="false" />
-            <element signature="e#5173#5274#0" expanded="false" />
-            <element signature="e#5278#6350#0" expanded="false" />
+            <element signature="e#616#671#0" expanded="true" />
+            <element signature="e#6357#6379#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/step_definitions/contact_management_steps.rb.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

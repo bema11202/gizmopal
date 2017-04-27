@@ -1,6 +1,7 @@
 
 require "selenium-webdriver"
 require "appium_lib"
+require "watir"
 require "rspec"
 require "rspec/expectations"
 require "cucumber"
@@ -18,18 +19,18 @@ include RSpec::Expectations
 Before do
   def capabilities
     capabilities = {
-        'appium-version': '1.0',
+        'appium-version': '1.5',
         'platformName': 'Android',
-        'platformVersion': '6.0',
+        'platformVersion': '7.0',
         'newCommandTimeout': '5000',
-        'deviceName': 'Nexus J3',
+        'deviceName': 'Galaxy S7',
         '--no-reset': 'False',
         'app': '/Users/B.Masoko/Desktop/GIZMOPAL/apks/Vzw_GizmoPal_2_3_42_Test_debug.apk',
     }
   end
   #'--no-reset': 'true',
   def server_url
-    "http://127.0.0.1:4723/wd/hub"
+    'http://127.0.0.1:4723/wd/hub'
   end
 
 =begin
@@ -40,11 +41,10 @@ end
 =end
 
 
-
  @driver = Selenium::WebDriver.for :remote,
 
                                    desired_capabilities: capabilities,
-                                   url: "http://127.0.0.1:4723/wd/hub"
+                                   url: server_url
 
 end
 

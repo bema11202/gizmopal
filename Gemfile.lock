@@ -108,6 +108,8 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.2)
+    watir (6.2.0)
+      selenium-webdriver (~> 3.0)
     websocket (1.2.4)
 
 PLATFORMS
@@ -125,6 +127,7 @@ DEPENDENCIES
   rubygems-bundler
   rubygems-update
   selenium-webdriver
+  watir
 
 BUNDLED WITH
    1.13.5
