@@ -7,6 +7,14 @@ require 'watir'
 include RSpec::Matchers
 include RSpec::Expectations
 include Selenium::WebDriver::Support
+include Selenium::WebDriver::DriverExtensions
+include Selenium::WebDriver::KeyActions
+include Selenium::WebDriver::Keys
+include Selenium::WebDriver::SearchContext
+include Appium::Android
+include Selenium::WebDriver::Interactions
+
+
 
 
 
@@ -33,7 +41,6 @@ Given(/^I have successfully pair the gizmo$/) do
 
   # I click on the next button on Prepare your Gizmo page
   @prep_your_giz_next.click
-
 
   # I should see the gizmo number text field
   gizmo_number_input = wait.until{(@driver.find_element(:class, 'android.widget.EditText'))}
@@ -104,10 +111,7 @@ Given(/^I have successfully pair the gizmo$/) do
   puts 'Gizmo has been successfully paired'.upcase
 
   expect(wait.until{(@driver.find_element(:id => 'com.vzw.gizmopal:id/gizmopal_locate').click)})
-
 end
-
-
 
 
 Then(/^I should be able to locate the gizmo every five minutes upto one hundred times$/) do |counter = 0|

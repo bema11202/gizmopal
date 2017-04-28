@@ -10,6 +10,14 @@ require "pp"
 require "pry"
 include RSpec::Matchers
 include RSpec::Expectations
+include Selenium::WebDriver::Support
+include Selenium::WebDriver::DriverExtensions
+include Selenium::WebDriver::KeyActions
+include Selenium::WebDriver::Keys
+include Selenium::WebDriver::SearchContext
+include Appium::Android
+include Selenium::WebDriver::Interactions
+include Selenium::WebDriver::
 
 
 
@@ -21,9 +29,9 @@ Before do
     capabilities = {
         'appium-version': '1.5',
         'platformName': 'Android',
-        'platformVersion': '7.0',
+        'platformVersion': '6.0',
         'newCommandTimeout': '5000',
-        'deviceName': 'Galaxy S7',
+        'deviceName': 'Nexus J3',
         '--no-reset': 'False',
         'app': '/Users/B.Masoko/Desktop/GIZMOPAL/apks/Vzw_GizmoPal_2_3_42_Test_debug.apk',
     }

@@ -124,7 +124,7 @@ Then(/^I should be able to delete a contact$/) do
   wait.until{@driver.find_element(:id => 'settins').click}
   wait.until{@driver.find_element(:id => 'contact').click}
   contact_name = wait.until{@driver.find_element(:id => 'contact_name')}
-  contact_name.longpress
+  contact_name.long
   wait.until{@driver.find_element(:id => 'popuponfirm').click}
 
 end
