@@ -6,6 +6,13 @@ require 'rdoc'
 include RSpec::Matchers
 include RSpec::Expectations
 include Selenium::WebDriver::Support
+include Selenium::WebDriver::KeyActions
+include Selenium::WebDriver::Keys
+include Selenium::WebDriver::SearchContext
+include Appium::Android
+include Selenium::WebDriver::Interactions
+include Selenium::WebDriver::Platform
+include Selenium::WebDriver::DriverExtensions
 
 
 Given(/^I have successfully paired the gizmo$/) do
@@ -13,6 +20,7 @@ Given(/^I have successfully paired the gizmo$/) do
 end
 
 Then(/^I should not be able to add a caregiver without a name or phone number$/) do
+
   settings = wait.until{@driver.find_element(:xpath => '/android.widget.TextView[3]')}
   settings.click
 
@@ -49,6 +57,7 @@ Then(/^I should not be able to add a caregiver without a name or phone number$/)
 end
 
 Then(/^I should be able to add a caregiver$/) do
+
   wait.until{@driver.find_element(:id => 'settins').click}
   wait.until{@driver.find_element(:id => 'contact').click}
   wait.until{@driver.find_element(:id => 'addcontact_button').click}
@@ -73,6 +82,7 @@ end
 
 
 Then(/^I should be able to edit caregiver information$/) do
+
   wait.until{@driver.find_element(:id => 'settins').click}
   wait.until{@driver.find_element(:id => 'contact').click}
   contact_name = wait.until{@driver.find_element(:id => 'contact_name')}
@@ -87,6 +97,7 @@ Then(/^I should be able to edit caregiver information$/) do
 
 
 Then(/^I should be able to convert a caregiver into a contact$/) do
+
   wait.until{@driver.find_element(:id => 'settins').click}
   wait.until{@driver.find_element(:id => 'contact').click}
   consent_dropdown =   wait.until{@driver.find_element(:id => 'consent')}
@@ -109,6 +120,7 @@ end
   end
 
 Then(/^I should be able to delete a caregiver$/) do
+
   wait.until{@driver.find_element(:id => 'settins').click}
   wait.until{@driver.find_element(:id => 'contact').click}
   contact_name = wait.until{@driver.find_element(:id => 'contact_name')}
@@ -118,13 +130,62 @@ end
 
 Then(/^I should be able to add a contact$/) do
 
+  wait.until{@driver.find_element(:id => 'settins').click}
+  wait.until{@driver.find_element(:id => 'contact').click}
+  wait.until{@driver.find_element(:id => 'addcontact_button').click}
+  caregiver_info = wait.until{@driver.find_element(:id => 'name')}
+  caregiver_info.send_keys 'caregivername'
+  caregiver_phone = @driver.find_element(:id => 'caregiverphone')
+  caregiver_phone.send_keys 'phone'
+  @driver.find_element(:id => 'relationship').click
+  wait.until{@driver.find_element(:id => 'relationship_selection').click}
+
+  consent_dropdown =   wait.until{@driver.find_element(:id => 'consent')}
+  if consent_dropdown.selected?
+    consent_dropdown.click
+    click_save_button
+
+  else
+
+    click_save_button
+  end
+  expect(wait.until{@driver.find_element(:id => 'contact_name').text.to include('john')})
+  puts 'Contact added successfully'.upcase
 end
 
 Then(/^I should be able to delete a contact$/) do
+
   wait.until{@driver.find_element(:id => 'settins').click}
   wait.until{@driver.find_element(:id => 'contact').click}
   contact_name = wait.until{@driver.find_element(:id => 'contact_name')}
   contact_name.long
   wait.until{@driver.find_element(:id => 'popuponfirm').click}
 
+end
+
+
+Then(/^I should not be able to add the same contact twice$/) do
+
+  wait.until{@driver.find_element(:id => 'settins').click}
+  wait.until{@driver.find_element(:id => 'contact').click}
+  wait.until{@driver.find_element(:id => 'addcontact_button').click}
+  caregiver_info = wait.until{@driver.find_element(:id => 'name')}
+  caregiver_info.send_keys 'caregivername'
+  caregiver_phone = @driver.find_element(:id => 'caregiverphone')
+  caregiver_phone.send_keys 'duplicated_phone'
+  @driver.find_element(:id => 'relationship').click
+  wait.until{@driver.find_element(:id => 'relationship_selection').click}
+
+  consent_dropdown =   wait.until{@driver.find_element(:id => 'consent')}
+  if consent_dropdown.selected?
+    consent_dropdown.click
+    click_save_button
+
+  else
+
+    click_save_button
+  end
+  expect(wait.until{@driver.find_element(:id => 'header_error').text.to include('Contact already exist')})
+  @driver.alert_accept
+  puts 'Contact added successfully'.upcase
 end

@@ -14,3 +14,4 @@ Feature: Contact management
       Then I should be able to delete a caregiver
       Then I should be able to add a contact
       Then I should be able to delete a contact
+      Then I should not be able to add the same contact twice

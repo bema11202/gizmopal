@@ -17,7 +17,9 @@ include Selenium::WebDriver::Keys
 include Selenium::WebDriver::SearchContext
 include Appium::Android
 include Selenium::WebDriver::Interactions
-include Selenium::WebDriver::
+include Selenium::WebDriver::Platform
+include Selenium::WebDriver::DriverExtensions
+
 
 
 
@@ -193,7 +195,7 @@ end
 
     phone_number =  wait.until{(@driver.find_element(:id => 'com.vzw.gizmopal:id/setupCaretakerMdn'))}
 
-    if phone_number.text.eql("")
+    if phone_number.text.nil?
       phone_number.send_keys(6462002347)
 
       # I should be redirected to personalize your gizmo page
@@ -213,8 +215,6 @@ end
       click_next_button
     end
   end
-
-
 
 
 After do
