@@ -16,7 +16,7 @@ include Appium::Android
 include Selenium::WebDriver::Interactions
 
 
-Given(/^I have successfully pair the gizmo$/) do
+Given(/^I have successfully paired a gizmo$/) do
 
   @get_started = wait.until{(@driver.find_element(:id, 'com.vzw.gizmopal:id/introNextButton'))}
   @get_started.click
