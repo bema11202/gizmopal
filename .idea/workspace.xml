@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="631e10c9-4d67-4763-aedc-49964c732b1f" name="Default" comment="Pairing updates">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/features/step_definitions/211_location_alert_steps.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/features/step_definitions/contact_management2_steps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/2.1.1.location_alert.feature" afterPath="$PROJECT_DIR$/features/2.1.1.location_alert.feature" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/contact_management.feature" afterPath="$PROJECT_DIR$/features/contact_management.feature" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/step_definitions/contact_management_steps.rb.rb" afterPath="$PROJECT_DIR$/features/step_definitions/contact_management_steps.rb.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/step_definitions/locate_gizmo_steps.rb" afterPath="$PROJECT_DIR$/features/step_definitions/locate_gizmo_steps.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/support/env.rb" afterPath="$PROJECT_DIR$/features/support/env.rb" />
     </list>
     <list id="9211aee3-f052-40ba-ab80-436e8bc66d8a" name="Revert: commiting changes due to error" comment="" />
@@ -19,15 +19,18 @@
   </component>
   <component name="ChangesViewManager" flattened_view="false" />
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/gizmoPal_automation@contact_management_steps_rb.coverage" NAME="contact_management_steps.rb Coverage Results" MODIFIED="1493830523380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/features/step_definitions" MODULE_NAME="Locate_gizmo" />
     <SUITE FILE_PATH="coverage/Locate_gizmo@locate_gizmo_feature.coverage" NAME="locate_gizmo.feature Coverage Results" MODIFIED="1493311500743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Locate_gizmo" />
     <SUITE FILE_PATH="coverage/Locate_gizmo@contact_management_feature.coverage" NAME="contact_management.feature Coverage Results" MODIFIED="1493131864502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Locate_gizmo" />
+    <SUITE FILE_PATH="coverage/gizmoPal_automation@locate_gizmo_feature.coverage" NAME="locate_gizmo.feature Coverage Results" MODIFIED="1493825724448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Locate_gizmo" />
+    <SUITE FILE_PATH="coverage/gizmoPal_automation@contact_management_feature.coverage" NAME="contact_management.feature Coverage Results" MODIFIED="1493831158036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Locate_gizmo" />
     <SUITE FILE_PATH="coverage/Locate_gizmo@contact_management_steps_rb.coverage" NAME="contact_management_steps.rb Coverage Results" MODIFIED="1493055390114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/features/step_definitions" MODULE_NAME="Locate_gizmo" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Gemfile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/Gemfile">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
               <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
@@ -37,61 +40,90 @@
         </entry>
       </file>
       <file leaf-file-name="locate_gizmo.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/locate_gizmo.feature">
+        <entry file="file://$PROJECT_DIR$/features/locate_gizmo.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="87" />
+            <state relative-caret-position="76">
+              <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact_management.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/contact_management.feature">
+      <file leaf-file-name="locate_gizmo_steps.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/step_definitions/locate_gizmo_steps.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="159">
+              <caret line="110" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact_management.feature" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/features/contact_management.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="13" column="31" lean-forward="false" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="2.1.1.location_alert.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/2.1.1.location_alert.feature">
+        <entry file="file://$PROJECT_DIR$/features/2.1.1.location_alert.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-973">
-              <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+            <state relative-caret-position="190">
+              <caret line="10" column="46" lean-forward="false" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="211_location_alert_steps.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/step_definitions/211_location_alert_steps.rb">
+        <entry file="file://$PROJECT_DIR$/features/step_definitions/211_location_alert_steps.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1278">
-              <caret line="219" column="0" lean-forward="true" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
+            <state relative-caret-position="463">
+              <caret line="219" column="0" lean-forward="false" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact_management_steps.rb.rb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/step_definitions/contact_management_steps.rb.rb">
+      <file leaf-file-name="contact_management_steps.rb.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/step_definitions/contact_management_steps.rb.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="165" column="0" lean-forward="true" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
+            <state relative-caret-position="2090">
+              <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact_management2_steps" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/step_definitions/contact_management2_steps">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="env.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/support/env.rb">
+        <entry file="file://$PROJECT_DIR$/features/support/env.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-              <folding />
+            <state relative-caret-position="836">
+              <caret line="146" column="5" lean-forward="false" selection-start-line="146" selection-start-column="5" selection-end-line="146" selection-end-column="5" />
+              <folding>
+                <element signature="e#863#918#0" expanded="false" />
+                <element signature="e#4436#4499#0" expanded="false" />
+                <element signature="e#4503#4553#0" expanded="false" />
+                <element signature="e#4679#4849#0" expanded="false" />
+                <element signature="e#4853#4966#0" expanded="false" />
+                <element signature="e#4970#5069#0" expanded="false" />
+                <element signature="e#5073#5174#0" expanded="false" />
+                <element signature="e#5178#6247#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,15 +143,16 @@
       <list>
         <option value="$PROJECT_DIR$/features/locate_gizmo.feature" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/features/step_definitions/locate_gizmo_steps.rb" />
-        <option value="$PROJECT_DIR$/features/contact_management.feature" />
-        <option value="$PROJECT_DIR$/features/support/env.rb" />
-        <option value="$PROJECT_DIR$/features/step_definitions/contact_management_steps.rb.rb" />
         <option value="$PROJECT_DIR$/features/2.1.1.location_alert.feature" />
         <option value="$PROJECT_DIR$/features/step_definitions/2.1.1_location_alert_steps.rb" />
         <option value="$PROJECT_DIR$/features/step_definitions/2.1.1.location_alert_steps.rb" />
         <option value="$PROJECT_DIR$/features/step_definitions/my_steps.rb" />
         <option value="$PROJECT_DIR$/features/step_definitions/211_location_alert_steps.rb" />
+        <option value="$PROJECT_DIR$/features/step_definitions/locate_gizmo_steps.rb" />
+        <option value="$PROJECT_DIR$/features/support/env.rb" />
+        <option value="$PROJECT_DIR$/features/step_definitions/contact_management_steps.rb.rb" />
+        <option value="$PROJECT_DIR$/features/contact_management.feature" />
+        <option value="$PROJECT_DIR$/features/step_definitions/contact_management2_steps" />
       </list>
     </option>
   </component>
@@ -168,12 +201,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Locate_gizmo" />
+              <option name="myItemId" value="gizmoPal_automation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -183,7 +215,7 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Locate_gizmo" />
+              <option name="myItemId" value="gizmoPal_automation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -197,7 +229,25 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Locate_gizmo" />
+              <option name="myItemId" value="gizmoPal_automation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gizmoPal_automation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="features" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="support" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gizmoPal_automation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -215,6 +265,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -237,7 +288,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber.locate_gizmo.feature">
+  <component name="RunManager" selected="Cucumber.contact_management.feature">
     <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="" />
@@ -425,7 +476,9 @@
       <workItem from="1493327532862" duration="2627000" />
       <workItem from="1493389481026" duration="4208000" />
       <workItem from="1493397008861" duration="5932000" />
-      <workItem from="1493648645801" duration="5165000" />
+      <workItem from="1493648645801" duration="7057000" />
+      <workItem from="1493746200385" duration="12190000" />
+      <workItem from="1493830102043" duration="959000" />
     </task>
     <task id="LOCAL-00001" summary="First commit of 5 x 100">
       <created>1491591655283</created>
@@ -452,39 +505,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="locate_gizmo_feature - 2017.04.27 at 12h 17m 47s.xml">
+    <history-entry file="contact_management_feature - 2017.05.03 at 13h 03m 44s.xml">
+      <configuration name="contact_management.feature" configurationId="CucumberRunConfigurationType" />
+    </history-entry>
+    <history-entry file="contact_management_feature - 2017.05.03 at 13h 05m 40s.xml">
+      <configuration name="contact_management.feature" configurationId="CucumberRunConfigurationType" />
+    </history-entry>
+    <history-entry file="locate_gizmo_feature - 2017.05.03 at 11h 14m 56s.xml">
       <configuration name="locate_gizmo.feature" configurationId="CucumberRunConfigurationType" />
     </history-entry>
-    <history-entry file="locate_gizmo_feature - 2017.04.27 at 12h 18m 56s.xml">
+    <history-entry file="locate_gizmo_feature - 2017.05.03 at 11h 16m 13s.xml">
       <configuration name="locate_gizmo.feature" configurationId="CucumberRunConfigurationType" />
     </history-entry>
-    <history-entry file="locate_gizmo_feature - 2017.04.27 at 12h 19m 12s.xml">
+    <history-entry file="locate_gizmo_feature - 2017.05.03 at 11h 18m 11s.xml">
       <configuration name="locate_gizmo.feature" configurationId="CucumberRunConfigurationType" />
     </history-entry>
-    <history-entry file="locate_gizmo_feature - 2017.04.27 at 12h 20m 59s.xml">
+    <history-entry file="locate_gizmo_feature - 2017.05.03 at 11h 19m 55s.xml">
       <configuration name="locate_gizmo.feature" configurationId="CucumberRunConfigurationType" />
     </history-entry>
-    <history-entry file="locate_gizmo_feature - 2017.04.27 at 12h 21m 11s.xml">
+    <history-entry file="locate_gizmo_feature - 2017.05.03 at 11h 25m 34s.xml">
       <configuration name="locate_gizmo.feature" configurationId="CucumberRunConfigurationType" />
     </history-entry>
-    <history-entry file="locate_gizmo_feature - 2017.04.27 at 12h 25m 44s.xml">
+    <history-entry file="locate_gizmo_feature - 2017.05.03 at 11h 31m 08s.xml">
       <configuration name="locate_gizmo.feature" configurationId="CucumberRunConfigurationType" />
     </history-entry>
-    <history-entry file="locate_gizmo_feature - 2017.04.27 at 12h 28m 34s.xml">
+    <history-entry file="locate_gizmo_feature - 2017.05.03 at 11h 34m 27s.xml">
       <configuration name="locate_gizmo.feature" configurationId="CucumberRunConfigurationType" />
     </history-entry>
-    <history-entry file="locate_gizmo_feature - 2017.04.27 at 12h 34m 39s.xml">
-      <configuration name="locate_gizmo.feature" configurationId="CucumberRunConfigurationType" />
-    </history-entry>
-    <history-entry file="locate_gizmo_feature - 2017.04.27 at 12h 42m 12s.xml">
-      <configuration name="locate_gizmo.feature" configurationId="CucumberRunConfigurationType" />
-    </history-entry>
-    <history-entry file="locate_gizmo_feature - 2017.04.27 at 12h 45m 05s.xml">
+    <history-entry file="locate_gizmo_feature - 2017.05.03 at 11h 43m 14s.xml">
       <configuration name="locate_gizmo.feature" configurationId="CucumberRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132917000" />
+    <option name="totallyTimeSpent" value="147958000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -497,15 +550,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="831" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18311875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13090129" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32746956" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44431555" sideWeight="0.30664396" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33423913" sideWeight="0.49570817" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2853261" sideWeight="0.49570817" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44431555" sideWeight="0.69335604" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22418478" sideWeight="0.49346963" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22418478" sideWeight="0.49346963" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -562,17 +616,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/step_definitions/locate_gizmo_steps.rb" />
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/support/env.rb" />
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/locate_gizmo.feature">
+    <entry file="file://$PROJECT_DIR$/features/locate_gizmo.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="44" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="44" />
@@ -580,7 +624,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/contact_management.feature">
+    <entry file="file://$PROJECT_DIR$/features/contact_management.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
@@ -588,10 +632,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/step_definitions/locate_gizmo_steps.rb" />
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/support/env.rb" />
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/step_definitions/contact_management_steps.rb.rb" />
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/Gemfile">
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/locate_gizmo_steps.rb" />
+    <entry file="file://$PROJECT_DIR$/features/support/env.rb" />
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/contact_management_steps.rb.rb" />
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
@@ -599,7 +643,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/locate_gizmo.feature">
+    <entry file="file://$PROJECT_DIR$/features/locate_gizmo.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="44" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="44" />
@@ -607,7 +651,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/contact_management.feature">
+    <entry file="file://$PROJECT_DIR$/features/contact_management.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
@@ -615,10 +659,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/step_definitions/locate_gizmo_steps.rb" />
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/support/env.rb" />
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/step_definitions/contact_management_steps.rb.rb" />
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/Gemfile">
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/locate_gizmo_steps.rb" />
+    <entry file="file://$PROJECT_DIR$/features/support/env.rb" />
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/contact_management_steps.rb.rb" />
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
@@ -626,7 +670,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/locate_gizmo.feature">
+    <entry file="file://$PROJECT_DIR$/features/locate_gizmo.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="44" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="44" />
@@ -634,7 +678,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/contact_management.feature">
+    <entry file="file://$PROJECT_DIR$/features/contact_management.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
@@ -642,10 +686,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/step_definitions/contact_management_steps.rb.rb" />
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/support/env.rb" />
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/step_definitions/locate_gizmo_steps.rb" />
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/Gemfile">
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/contact_management_steps.rb.rb" />
+    <entry file="file://$PROJECT_DIR$/features/support/env.rb" />
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/locate_gizmo_steps.rb" />
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
@@ -653,7 +697,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/locate_gizmo.feature">
+    <entry file="file://$PROJECT_DIR$/features/locate_gizmo.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="44" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="44" />
@@ -661,7 +705,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/contact_management.feature">
+    <entry file="file://$PROJECT_DIR$/features/contact_management.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
@@ -669,10 +713,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/step_definitions/contact_management_steps.rb.rb" />
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/support/env.rb" />
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/step_definitions/locate_gizmo_steps.rb" />
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/Gemfile">
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/contact_management_steps.rb.rb" />
+    <entry file="file://$PROJECT_DIR$/features/support/env.rb" />
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/locate_gizmo_steps.rb" />
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -680,7 +724,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/locate_gizmo.feature">
+    <entry file="file://$PROJECT_DIR$/features/locate_gizmo.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
@@ -688,8 +732,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/step_definitions/locate_gizmo_steps.rb" />
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/Gemfile">
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/locate_gizmo_steps.rb" />
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
@@ -697,7 +741,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/locate_gizmo.feature">
+    <entry file="file://$PROJECT_DIR$/features/locate_gizmo.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
@@ -705,9 +749,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/support/env.rb" />
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/step_definitions/locate_gizmo_steps.rb" />
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/Gemfile">
+    <entry file="file://$PROJECT_DIR$/features/support/env.rb" />
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/locate_gizmo_steps.rb" />
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
@@ -715,7 +759,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/locate_gizmo.feature">
+    <entry file="file://$PROJECT_DIR$/features/locate_gizmo.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
@@ -723,11 +767,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/support/env.rb" />
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/step_definitions/locate_gizmo_steps.rb" />
+    <entry file="file://$PROJECT_DIR$/features/support/env.rb" />
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/locate_gizmo_steps.rb" />
     <entry file="file://$PROJECT_DIR$/60" />
     <entry file="file://$PROJECT_DIR$/240" />
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/Gemfile">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
@@ -735,38 +779,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/support/env.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/locate_gizmo.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="87" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/step_definitions/2.1.1_location_alert_steps.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="51" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/step_definitions/locate_gizmo_steps.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="42" lean-forward="false" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/2.1.1_location_alert_steps.rb" />
     <entry file="uml://GemDependency/#Locate_gizmo">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -831,56 +844,98 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.26573119929839945" x="2270.5000000000005" y="297.0" />
+          <settings layout="Hierarchic Group" zoom="0.26573119929839945" x="2271.0" y="297.0" />
           <SelectedNodes />
           <Categories />
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/step_definitions/2.1.1.location_alert_steps.rb">
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/2.1.1.location_alert_steps.rb" />
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/my_steps.rb" />
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.3.1/gems/rspec-expectations-3.5.0/lib/rspec/matchers.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="208">
+          <caret line="966" column="0" lean-forward="false" selection-start-line="966" selection-start-column="0" selection-end-line="966" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/locate_gizmo.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/step_definitions/my_steps.rb">
+    <entry file="file://$PROJECT_DIR$/features/support/env.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="836">
+          <caret line="146" column="5" lean-forward="false" selection-start-line="146" selection-start-column="5" selection-end-line="146" selection-end-column="5" />
+          <folding>
+            <element signature="e#863#918#0" expanded="false" />
+            <element signature="e#4436#4499#0" expanded="false" />
+            <element signature="e#4503#4553#0" expanded="false" />
+            <element signature="e#4679#4849#0" expanded="false" />
+            <element signature="e#4853#4966#0" expanded="false" />
+            <element signature="e#4970#5069#0" expanded="false" />
+            <element signature="e#5073#5174#0" expanded="false" />
+            <element signature="e#5178#6247#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.3.1/gems/cucumber-2.4.0/lib/cucumber/rb_support/rb_dsl.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1767">
+          <caret line="115" column="5" lean-forward="true" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/locate_gizmo_steps.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="110" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/contact_management.feature">
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/211_location_alert_steps.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="463">
+          <caret line="219" column="0" lean-forward="false" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/2.1.1.location_alert.feature">
+    <entry file="file://$PROJECT_DIR$/features/2.1.1.location_alert.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-973">
-          <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+        <state relative-caret-position="190">
+          <caret line="10" column="46" lean-forward="false" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/step_definitions/211_location_alert_steps.rb">
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/contact_management_steps.rb.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1278">
-          <caret line="219" column="0" lean-forward="true" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
+        <state relative-caret-position="2090">
+          <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gizmoPal_automation/features/step_definitions/contact_management_steps.rb.rb">
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/contact_management2_steps">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="165" column="0" lean-forward="true" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
+        <state relative-caret-position="380">
+          <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/contact_management.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="31" lean-forward="false" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
           <folding />
         </state>
       </provider>

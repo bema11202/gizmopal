@@ -6,6 +6,7 @@ require 'rdoc'
 require 'watir'
 include RSpec::Matchers
 include RSpec::Expectations
+include RSpec::Core::DSL
 include Selenium::WebDriver::Support
 include Selenium::WebDriver::DriverExtensions
 include Selenium::WebDriver::KeyActions
@@ -13,9 +14,6 @@ include Selenium::WebDriver::Keys
 include Selenium::WebDriver::SearchContext
 include Appium::Android
 include Selenium::WebDriver::Interactions
-
-
-
 
 
 Given(/^I have successfully pair the gizmo$/) do
@@ -50,7 +48,7 @@ Given(/^I have successfully pair the gizmo$/) do
   gizmo_number = @gizmo_number
 
   #@gizmo_test_numbers = [6464543333, 2128893345, 9084565555, 7184449000, 9084445555].sample
-  @gizmo_test_numbers = 9082395581
+  @gizmo_test_numbers = 9088098036
   gizmo_number.send_keys(@gizmo_test_numbers)
   click_next_button
 
@@ -74,17 +72,14 @@ Given(/^I have successfully pair the gizmo$/) do
 
   # I should see the security code field
 
-  wait.until{(@driver.find_element(:id, 'com.vzw.gizmopal:id/gizmopal_security_code'))}
+  wait.until{(@driver.find_element(:id, 'com.vzw.gizmopal:id/gizmopal_security_code')).text.be_truthy}
+
+  next_button = wait.until{(@driver.find_element(:id, 'com.vzw.gizmopal:id/bottomRightButton'))}
+  sleep 7
+  next_button.displayed?
+  next_button.click
 
 
-  # I enter the five digits security code and click NEXT
-  # Get security code from the device and enter it here
-  puts "Enter the security code you received from the text message here:".upcase
-  code = gets
-
-  wait.until{(@driver.find_element(:id, 'com.vzw.gizmopal:id/gizmopal_security_code').send_keys(code))}
-
-  click_next_button
 
   # I should see text containing Linking To Your Gizmo header
   wait = Selenium::WebDriver::Wait.new :timeout => 240
@@ -96,33 +91,36 @@ Given(/^I have successfully pair the gizmo$/) do
   if
     allow_contact = wait.until{(@driver.find_element(:id => 'com.android.packageinstaller:id/permission_allow_button'))}
     allow_contact.click
+    expect { print 'Gizmo successfully paired' }.to output('Gizmo successfully paired').to_stdout
 
   elsif linking_confirmation.text.eq('Unable to Linking to Your Gizmo')
     @driver.quit
-    
   end
 
   contact_exists = wait.until{(@driver.find_element(:id => 'android:id/button1'))}
 
   contact_exists.click if contact_exists
 
-  2.times {click_next_button}
+  2.times do
+    click_next_button
 
-  puts 'Gizmo has been successfully paired'.upcase
+    puts 'Gizmo has been successfully paired'.upcase
 
-  expect(wait.until{(@driver.find_element(:id => 'com.vzw.gizmopal:id/gizmopal_locate').click)})
+end
 end
 
 
 Then(/^I should be able to locate the gizmo every five minutes upto one hundred times$/) do |counter = 0|
 
   clicks_counter
+  expect(wait.until{(@driver.find_element(:id => 'com.vzw.gizmopal:id/gizmopal_locate').click)})
 
-  while counter < 100
+  100.times do
     sleep 90
     location = @driver.find_element(:id => 'com.vzw.gizmopal:id/gizmopal_locate')
     location.click
-
   end
 end
+
+
 

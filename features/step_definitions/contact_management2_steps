@@ -1,0 +1,21 @@
+require 'selenium-webdriver'
+require 'appium_lib'
+require 'cucumber'
+require 'rspec'
+require 'rdoc'
+require 'watir'
+include RSpec::Matchers
+include RSpec::Expectations
+include RSpec::Core::DSL
+include Selenium::WebDriver::Support
+include Selenium::WebDriver::DriverExtensions
+include Selenium::WebDriver::KeyActions
+include Selenium::WebDriver::Keys
+include Selenium::WebDriver::SearchContext
+include Appium::Android
+include Selenium::WebDriver::Interactions
+
+
+Given(/^I have successfully paired a gizmo$/) do
+
+end

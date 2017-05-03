@@ -5,7 +5,7 @@ Feature: Contact management
 
 
     Scenario: Manage caregivers and contacts
-      Given I have successfully paired the gizmo
+      Given I have successfully paired a gizmo
       Then I should not be able to add a caregiver without a name or phone number
       Then I should be able to add a caregiver
       Then I should be able to edit caregiver information
