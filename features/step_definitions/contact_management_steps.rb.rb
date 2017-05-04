@@ -13,6 +13,7 @@ include Selenium::WebDriver::KeyActions
 include Selenium::WebDriver::Keys
 include Selenium::WebDriver::SearchContext
 include Appium::Android
+include Appium::Device
 include Selenium::WebDriver::Interactions
 
 
@@ -24,6 +25,7 @@ Given(/^I have successfully paired a gizmo$/) do
   # I should see the continue button$
   continue_button = wait.until{@driver.find_element(:xpath, '//android.widget.Button[2]')}
   continue_button.click
+
 
 
   # I should see the permission popup buttons
@@ -91,7 +93,6 @@ Given(/^I have successfully paired a gizmo$/) do
   if
   allow_contact = wait.until{(@driver.find_element(:id => 'com.android.packageinstaller:id/permission_allow_button'))}
     allow_contact.click
-    expect { print 'Gizmo successfully paired' }.to output('Gizmo successfully paired').to_stdout
 
   elsif linking_confirmation.text.eq('Unable to Linking to Your Gizmo')
     @driver.quit
@@ -112,15 +113,23 @@ end
 
 Then(/^I should not be able to add a caregiver without a name or phone number$/) do
 
-  settings = wait.until{@driver.find_element(:xpath => '/android.widget.TextView[3]')}
+  settings = wait.until{@driver.find_element(:xpath => '//android.widget.TextView[3]')}
   settings.click
 
   contacts = wait.until{@driver.find_element(:id => 'com.vzw.gizmopal:id/settingsContactsLayout')}
+  if
+    contacts.displayed?
   contacts.click
+  else
+    #contacts.location_once_scrolled_into_view
+
+    scroll_to('Contacts')
+    contacts.click if contacts.displayed?
+  end
 
 
   add_contact_button = wait.until{@driver.find_element(:id => 'com.vzw.gizmopal:id/contacts_add')}
-  if add_contact_button.displayed?.to be_truthy
+  if add_contact_button.displayed?
   then add_contact_button.click
   else
     puts 'You have reached the maximum number of contacts'
@@ -131,83 +140,99 @@ Then(/^I should not be able to add a caregiver without a name or phone number$/)
 
   contact_mdn = wait.until{@driver.find_element(:id => 'com.vzw.gizmopal:id/contacts_add_mdn')}
   contact_mdn.nil?
+  contact_mdn.send_keys ''
   contact_name = wait.until{@driver.find_element(:id => 'com.vzw.gizmopal:id/contacts_add_name')}
-  contact_name.send_keys 'John'
+  contact_name.send_keys ''
   contact_relationship = wait.until{@driver.find_element(:id => 'com.vzw.gizmopal:id/contacts_add_relation_edittext')}
-  relalationship = ['Uncle', 'Dad', 'Daddy', 'Mom', 'Mommy', 'Friend', 'Coach'].sample
-  contact_relationship.send_keys relalationship
-  caregiver_check_box = wait.until{@driver.find_element(:id => 'com.vzw.gizmopal:id/contacts_add_name')}
-  caregiver_check_box.click if caregiver_check_box.attribute('checked').nil?
+  rela_name = ['Uncle', 'Dad', 'Daddy', 'Mom', 'Mommy', 'Friend', 'John', 'Coach'].sample
+  contact_relationship.send_keys(rela_name)
+  caregiver_check_box = wait.until{@driver.find_element(:id => 'com.vzw.gizmopal:id/contacts_add_caregiver_checkbox')}
+  caregiver_check_box.click if caregiver_check_box.attribute('selected').be_falsey
 
   click_save_button
 
-  expect(@driver.find_element(:id => 'com.vzw.gizmopal:id/contacts_add_mdn_error').text.to eql? 'The phone number must be 10 digits long')
+  expect(@driver.find_element(:id => 'com.vzw.gizmopal:id/contacts_add_mdn_error').text.eql 'The phone number must be 10 digits long')
+  expect(@driver.find_element(:id => 'com.vzw.gizmopal:id/contacts_add_name_error').text.eql "You must enter a Contact's name")
 
+  puts 'Add contact required fields test: Passed'
+  @driver.find_element(:id => 'android:id/button2').click
   # Phone number is a required fields ends
 
 end
 
 Then(/^I should be able to add a caregiver$/) do
+  add_contact_button = wait.until{@driver.find_element(:id => 'com.vzw.gizmopal:id/contacts_add')}
+  if add_contact_button.displayed?
+  then add_contact_button.click
 
-  wait.until{@driver.find_element(:id => 'settins').click}
-  wait.until{@driver.find_element(:id => 'contact').click}
-  wait.until{@driver.find_element(:id => 'addcontact_button').click}
-  caregiver_info = wait.until{@driver.find_element(:id => 'name')}
-  caregiver_info.send_keys 'caregivername'
-  caregiver_phone = @driver.find_element(:id => 'caregiverphone')
-  caregiver_phone.send_keys 'phone'
-  @driver.find_element(:id => 'relationship').click
-  wait.until{@driver.find_element(:id => 'relationship_selection').click}
+  contact_mdn = wait.until{@driver.find_element(:id => 'com.vzw.gizmopal:id/contacts_add_mdn')}
+  contact_mdn.send_keys '9083339999'
+  contact_name = wait.until{@driver.find_element(:id => 'com.vzw.gizmopal:id/contacts_add_name')}
+  contacts_list = ['John','Andrew','Paul','Anna','Caitlin'].sample
+  contact_name.send_keys(contacts_list)
+  contact_relationship = wait.until{@driver.find_element(:id => 'com.vzw.gizmopal:id/contacts_add_relation_edittext')}
+  rela_name = ['Uncle', 'Dad', 'Daddy', 'Mom', 'Mommy', 'Friend', 'John', 'Coach'].sample
+  contact_relationship.send_keys(rela_name)
+  caregiver_check_box = wait.until{@driver.find_element(:id => 'com.vzw.gizmopal:id/contacts_add_caregiver_checkbox')}
+  caregiver_check_box.click if caregiver_check_box.attribute('selected').be_falsey
 
-  consent_dropdown =   wait.until{@driver.find_element(:id => 'consent')}
-  if consent_dropdown.selected?
-    save_button = wait.until{@driver.find_element(:id => 'save')}
-    save_button.click
+  click_save_button
+
+  expect(wait.until{@driver.find_element(:id => 'com.vzw.gizmopal:id/item_label').text.include(contacts_list)})
+  puts 'Add caregiver test: Passed'
+
   else
-    consent_dropdown.select.action_perform
-    save_button.click
+    puts 'You have reached the maximum number of contacts'
   end
-  expect(wait.until{@driver.find_element(:id => 'contact_name').text.to include('john')})
-  puts 'Contact added successfully'.upcase
+  @back_button = wait.until{@driver.find_element(:xpath => '//android.widget.ImageButton[1]')}
+  @back_button.click
 end
 
 
 Then(/^I should be able to edit caregiver information$/) do
+  contacts = wait.until{@driver.find_element(:id => 'com.vzw.gizmopal:id/settingsContactsLayout')}
+  contacts.click
+  edit_contact_popup = wait.until{@driver.find_element(:xpath => '/android.widget.LinearLayout[2]')}
+  edit_contact_popup.click
+  contact_name = wait.until{@driver.find_element(:id => 'com.vzw.gizmopal:id/contacts_add_name')}
+  contacts_list = ['John','Andrew','Paul','Anna','Caitlin'].sample
+  contact_name.text.clear
+  contact_name.send_keys(contacts_list)
+  click_save_button
+  expect(wait.until{@driver.find_element(:id => 'com.vzw.gizmopal:id/item_label').text.include (contacts_list)})
+  puts 'Contact edit test: Passed'
+  @back_button.click  if @back_button.displayed?
 
-  wait.until{@driver.find_element(:id => 'settins').click}
-  wait.until{@driver.find_element(:id => 'contact').click}
-  contact_name = wait.until{@driver.find_element(:id => 'contact_name')}
-  contact_name.clear
-  contact_name.send_keys 'Andrew'
-  save_button = wait.until{@driver.find_element(:id => 'save')}
-  save_button.click
-
-  expect(wait.until{@driver.find_element(:id => 'contact_name').text.to include('Andrew')})
-  puts 'Contact edited successfully'.upcase
   end
 
 
 Then(/^I should be able to convert a caregiver into a contact$/) do
+  contacts = wait.until{@driver.find_element(:id => 'com.vzw.gizmopal:id/settingsContactsLayout')}
+  contacts.click
+  edit_contact_popup = wait.until{@driver.find_element(:xpath => '/android.widget.LinearLayout[2]')}
+  edit_contact_popup.click
+  caregiver_check_box = wait.until{@driver.find_element(:id => 'com.vzw.gizmopal:id/contacts_add_caregiver_checkbox')}
+  caregiver_check_box.click if caregiver_check_box.attribute('selected').be_truthy
 
-  wait.until{@driver.find_element(:id => 'settins').click}
-  wait.until{@driver.find_element(:id => 'contact').click}
-  consent_dropdown =   wait.until{@driver.find_element(:id => 'consent')}
-  consent_dropdown.click if consent_dropdown.selected?.be_falsey
-  save_button = wait.until{@driver.find_element(:id => 'save')}
-  save_button.click
-  sleep 5
+  click_save_button
+  puts 'Convert caregiver to contact test: Passed'
+  @back_button.click  if @back_button.displayed?
+
 end
 
 
   Then(/^I should be able to convert a caregiver into a contact back to a caregiver$/) do
+    contacts = wait.until{@driver.find_element(:id => 'com.vzw.gizmopal:id/settingsContactsLayout')}
+    contacts.click
+    edit_contact_popup = wait.until{@driver.find_element(:xpath => '/android.widget.LinearLayout[2]')}
+    edit_contact_popup.click
+    caregiver_check_box = wait.until{@driver.find_element(:id => 'com.vzw.gizmopal:id/contacts_add_caregiver_checkbox')}
+    caregiver_check_box.click if caregiver_check_box.attribute('checked').be_truthy
 
-    wait.until{@driver.find_element(:id => 'settins').click}
-    wait.until{@driver.find_element(:id => 'contact').click}
-    consent_dropdown =   wait.until{@driver.find_element(:id => 'consent')}
-    consent_dropdown.click if consent_dropdown.selected?.be_truthy
-    save_button = wait.until{@driver.find_element(:id => 'save')}
-    save_button.click
-    sleep 5
+    click_save_button
+    puts 'Convert contact back to caregiver test: Passed'
+    @back_button.click  if @back_button.displayed?
+
   end
 
 Then(/^I should be able to delete a caregiver$/) do
@@ -240,7 +265,7 @@ Then(/^I should be able to add a contact$/) do
 
     click_save_button
   end
-  expect(wait.until{@driver.find_element(:id => 'contact_name').text.to include('john')})
+  expect(wait.until{@driver.find_element(:id => 'contact_name').text.include('john')})
   puts 'Contact added successfully'.upcase
 end
 
@@ -276,7 +301,8 @@ Then(/^I should not be able to add the same contact twice$/) do
 
     click_save_button
   end
-  expect(wait.until{@driver.find_element(:id => 'header_error').text.to include('Contact already exist')})
+  expect(wait.until{@driver.find_element(:id => 'header_error').text.include('Contact already exist')})
   @driver.alert_accept
   puts 'Contact added successfully'.upcase
 end
+

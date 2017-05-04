@@ -2,6 +2,10 @@ Then(/^I should be able to add a location alert$/) do
   pending
 end
 
+Then(/^I should be able to edit alert date and time$/) do
+  pending
+end
+
 Then(/^I should be able to edit alert location$/) do
   pending
 end
@@ -18,10 +22,12 @@ Then(/^I should not be able to add more than five location alerts$/) do
   pending
 end
 
+#--------------------------------------------------------
+
 Then(/^I should be able to add a location check time$/) do
   pending
 end
-#----------------------------------------------------------------
+
 Then(/^I should be able to edit the location check time and date$/) do
   pending
 end

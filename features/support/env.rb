@@ -46,6 +46,7 @@ def appium_driver
 end
 =end
 
+  #Appium.promote_appium_methods
 
  @driver = Selenium::WebDriver.for :remote,
 
@@ -148,7 +149,7 @@ end
 
 
   def wait
-    Selenium::WebDriver::Wait.new :timeout => 60
+    Selenium::WebDriver::Wait.new :timeout => 180
   end
 
   def success
@@ -205,6 +206,8 @@ end
       click_next_button
     end
   end
+
+
 
 
 After do
